@@ -1,0 +1,191 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+
+
+header {
+    background-color: #173b57;
+    color: white;
+    text-align: center;
+
+    padding: 40px 20px;
+    margin: 0;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 42px;
+}
+
+header p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+
+nav {
+    background-color: #0e2739;
+    text-align: center;
+
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ff7043;
+}
+
+
+
+main {
+    max-width: 1100px;
+
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+
+    padding: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #173b57;
+    margin-top: 0;
+}
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.image-box {
+    flex: 1;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+
+    border-radius: 12px;
+    border: 5px solid #173b57;
+}
+
+
+
+.friendship-container {
+    display: flex;
+    gap: 20px;
+}
+
+article {
+    flex: 1;
+    background-color: #eef5fa;
+
+    padding: 20px;
+    margin: 5px;
+
+    border-left: 5px solid #ff7043;
+    border-radius: 8px;
+}
+
+article h3 {
+    color: #173b57;
+}
+
+
+
+blockquote {
+    margin: 25px 0;
+    padding: 15px 20px;
+
+    background-color: #fff1ec;
+    border-left: 5px solid #ff7043;
+
+    font-style: italic;
+}
+
+.learn-more {
+    display: inline-block;
+
+    padding: 12px 20px;
+    margin-top: 10px;
+
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.learn-more:hover {
+    background-color: #d94f27;
+}
+
+
+
+footer {
+    background-color: #173b57;
+    color: white;
+    text-align: center;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+@media (max-width: 700px) {
+
+    .about-container,
+    .friendship-container {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
